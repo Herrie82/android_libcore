@@ -19,14 +19,14 @@ LOCAL_PATH := $(call my-dir)
 # Subprojects with separate makefiles
 #
 
-subdirs := benchmarks tzdata ojluni tools/upstream metrictests
+subdirs := tzdata ojluni tools/upstream metrictests
 subdir_makefiles := $(call all-named-subdir-makefiles,$(subdirs))
 
 #
 # Include the definitions to build the Java code.
 #
 
-include $(LOCAL_PATH)/JavaLibrary.mk
+#include $(LOCAL_PATH)/JavaLibrary.mk
 
 #
 # Disable test modules if LIBCORE_SKIP_TESTS environment variable is set.
